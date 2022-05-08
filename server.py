@@ -5,7 +5,7 @@ serverPort = 80
 serverSocket = socket(AF_INET, SOCK_STREAM) # Create a TCP server socket
 # Prepare a sever socket
 # Fill in start
-serverSocket.bind(("10.0.0.13",serverPort)) #connecting the socket to port 6789
+serverSocket.bind(("127.0.0.1",serverPort)) #connecting the socket to port 6789
 serverSocket.listen(1) #listen to the client request
 print('The server is ready to receive:', serverPort)
 # Fill in end
