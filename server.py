@@ -1,7 +1,7 @@
 #import socket module
 from socket import *
 
-serverPort = 80
+serverPort = 6789
 serverSocket = socket(AF_INET, SOCK_STREAM) # Create a TCP server socket
 # Prepare a sever socket
 # Fill in start
