@@ -1,6 +1,6 @@
 #import socket module
 from socket import *
-
+import sys # In order to terminate the program
 serverPort = 6789
 serverSocket = socket(AF_INET, SOCK_STREAM) # Create a TCP server socket
 # Prepare a sever socket
@@ -22,7 +22,7 @@ while True:
         print(outputdata)
         # Send one HTTP header line into socket
         # Fill in start#
-        connectionSocket.send('\nHTTP/1.0 200 OK\n\n'.encode())
+        connectionSocket.send("HTTP/1.0 200 OK\n\n".encode())
         # Fill in end
         # Send the content of the requested file to the client
         for i in range(0, len(outputdata)):
@@ -34,7 +34,7 @@ while True:
     except IOError:
         # Send response message for file not found
         # Fill in start
-        connectionSocket.send("\nHTTP/1.0 404 Not Found\n\n".encode())
+        connectionSocket.send("HTTP/1.0 404 Not Found\n\n".encode())
         # Fill in end
         # Close client socket
         # Fill in start
