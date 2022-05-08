@@ -2,7 +2,7 @@
 
 ##Part 1:
 We run the server program and we open the browser and put the URL
-http://10.0.0.13:6789/HelloWorld.html
+
 
 
 
