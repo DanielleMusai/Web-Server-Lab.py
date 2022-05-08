@@ -1,13 +1,13 @@
 # Web-Server-Lab.py
 
-#Part 1:
+## Part 1:
 We run the server program and we open the browser and put the URL
 
 
 
 
 
-#Part 2: 
+## Part 2: 
 We deleted the port number: 6789 and we got the web page from the server.  
 
 
@@ -17,6 +17,6 @@ We deleted the port number: 6789 and we got the web page from the server.
 
 
 
-#Part 3:
+## Part 3:
 We tried to get a file that is not present at the server and we got “HTTP ERROR 404” .
 
